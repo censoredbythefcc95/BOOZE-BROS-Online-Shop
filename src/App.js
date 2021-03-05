@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="py-3">
         <Container>
-          This is the Boozebros shop.
+          This is the Boozebros
         </Container>
       </main>
       <Footer />
