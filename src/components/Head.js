@@ -10,8 +10,9 @@ const Header = () => {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link href="/cart">Add to Cart</Nav.Link>
-      <Nav.Link href="/userlogin">User Login</Nav.Link>
+      <Nav.Link href="/cart"> <i className="fas fa-shopping-cart"></i>Add to Cart</Nav.Link>
+      <Nav.Link href="/userlogin">
+      <i className="fas fa-user"></i>User Login</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
