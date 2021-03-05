@@ -1,6 +1,7 @@
 import React from 'react'
 import drinks from '../alcohol'
 import { Row, Col } from 'react-bootstrap'
+import Drink from "../components/Drink"
 
 const HomeScreen = () => {
     return (
@@ -9,9 +10,7 @@ const HomeScreen = () => {
             <Row>
                 {drinks.map(drink => (
                     <Col>
-                        <h2>{drink.name}</h2>
-                        <h2>{drink.category}</h2>
-                        <h2>{drink.description}</h2>
+                        <Drink drink={drink} />
                     </Col>
                 ))}
             </Row>
