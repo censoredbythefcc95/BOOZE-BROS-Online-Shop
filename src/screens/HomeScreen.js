@@ -10,6 +10,8 @@ const HomeScreen = () => {
                 {drinks.map(drink => (
                     <Col>
                         <h2>{drink.name}</h2>
+                        <h2>{drink.category}</h2>
+                        <h2>{drink.description}</h2>
                     </Col>
                 ))}
             </Row>

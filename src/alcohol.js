@@ -32,6 +32,28 @@ const drinks = [
     rating: 4,
     numReviews: 7,
 },
+{
+    _id: '4',
+    name: 'Canned Bread',
+    description: 'Squidward loves this stuff.',
+    brand: 'Tentacle Acres',
+    category: 'Beer',
+    price: 9.99,
+    countInStock: 11,
+    rating: 3,
+    numReviews: 1,
+},
+{
+    _id: '5',
+    name: 'Bloxy Cola',
+    description: 'Quench your thirst. Roblox players only.',
+    brand: 'Roblox',
+    category: 'Beer',
+    price: 4.99,
+    countInStock: 9,
+    rating: 5,
+    numReviews: 3,
+},
 ]
 
 export default drinks;
