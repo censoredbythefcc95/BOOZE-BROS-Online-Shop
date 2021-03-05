@@ -5,7 +5,7 @@ const Drink = ({ drink }) => {
     return (
         <Card>
             <a href={`/drink/${drink._id}`}>
-                <Card.Text src={drink.description} />
+                <Card.Img src={drink.image} />
                 
             </a>
         </Card>

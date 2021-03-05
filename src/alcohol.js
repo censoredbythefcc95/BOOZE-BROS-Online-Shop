@@ -9,6 +9,7 @@ const drinks = [
     countInStock: 3,
     rating: 5,
     numReviews: 3,
+    image: '/images/greygoose.jpg',
 },
 {
     _id: '2',
@@ -20,6 +21,7 @@ const drinks = [
     countInStock: 15,
     rating: 5,
     numReviews: 2,
+    image: '/images/blacklabel.jpg',
 },
 {
     _id: '3',
@@ -31,6 +33,7 @@ const drinks = [
     countInStock: 17,
     rating: 4,
     numReviews: 7,
+    image: '/images/fireball.jpg',
 },
 {
     _id: '4',
@@ -42,6 +45,7 @@ const drinks = [
     countInStock: 11,
     rating: 3,
     numReviews: 1,
+    image: '/images/cannedbread.jpg',
 },
 {
     _id: '5',
@@ -53,6 +57,7 @@ const drinks = [
     countInStock: 9,
     rating: 5,
     numReviews: 3,
+    image: '/images/bloxycola.jpg',
 },
 ]
 
