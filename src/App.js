@@ -6,13 +6,15 @@ import { Container } from "react-bootstrap"
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
+      <main>
         <Container>
-          Testing Container Component.
+          This is the Boozebros shop.
         </Container>
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
