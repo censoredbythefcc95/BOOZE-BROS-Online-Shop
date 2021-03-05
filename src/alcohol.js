@@ -59,6 +59,18 @@ const drinks = [
     numReviews: 3,
     image: '/images/bloxycola.jpg',
 },
+{
+    _id: '6',
+    name: 'Chilean Cabernet',
+    description: 'Cabernet wine from Chile.',
+    brand: 'Gato Negro',
+    category: 'Wine',
+    price: 12.99,
+    countInStock: 17,
+    rating: 5,
+    numReviews: 7,
+    image: '/images/gatonegro.jpg',
+},
 ]
 
 export default drinks;
