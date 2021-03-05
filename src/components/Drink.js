@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from "react-bootstrap"
+import Rating from "../components/Rating"
 // Object destructing for props being passed. Checkpoint for tonight.
 const Drink = ({ drink }) => {
     return (
@@ -16,9 +17,9 @@ const Drink = ({ drink }) => {
                  </a>
 
             <Card.Text as='div'>
-                <div className='my-4'>
-                    {drink.rating} from {drink.numReviews} reviews
-                </div>
+                <Rating value={drink.rating} 
+                        text={`${drink.numReviews} reviews`} 
+                />
             </Card.Text>
                 
             <Card.Text as='h4'>
