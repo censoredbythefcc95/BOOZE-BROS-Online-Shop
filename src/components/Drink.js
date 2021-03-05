@@ -1,20 +1,21 @@
 import React from 'react'
 import { Card } from "react-bootstrap"
 import Rating from "../components/Rating"
+import { Link } from 'react-router-dom'
 // Object destructing for props being passed. Checkpoint for tonight.
 const Drink = ({ drink }) => {
     return (
         <Card className='my-4 p-4 rounded'>
-            <a href={`/drink/${drink._id}`}>
+            <Link to={`/drink/${drink._id}`}>
                 <Card.Img src={drink.image} />
-            </a>
+            </Link>
 
             <Card.Body>
-                 <a href={`/drink/${drink._id}`}>
+                 <Link to={`/drink/${drink._id}`}>
                      <Card.Title as='div'>
                          <h4>{drink.name}</h4>
                      </Card.Title>
-                 </a>
+                 </Link>
 
             <Card.Text as='div'>
                 <Rating value={drink.rating} 

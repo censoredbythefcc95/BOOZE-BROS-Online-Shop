@@ -24,9 +24,9 @@ Customers will be able to:
 | --- | :---: |  
 | Project Approval | Approved | 
 | Planning Architecture | Complete  | 
-| React server set-up/ CORS | In Progress | 
+| React server set-up/ CORS | Complete and deployed. | 
 | Express server set-up | Not started |
-| Primary API creation | Not started. |
+| Primary API creation | In Progress - Mock Schema in progress. |
 | Express route configuration | Not started |
 | Nesting Routes | Not started.  |
 | React front-end primary set-up| In Progress  |
@@ -84,24 +84,24 @@ Initial components decided for Project.
 | Component | Description | 
 | --- | :---: |  
 | App | Heart of the application.| 
-| Navbar | This will hold the search bar and other components. | 
-| Body | Text that appears when user arrives on app. | 
-| Searchbar | Allows user to search for inventory of alcohol. |
-| Checkout | Component with checkout information. |
-| Menu | Shows current inventory of alcohol. |
+| Head | This will hold the Navigation Bar. | 
+| Rating | Component that houses rating function and displays in the Drink component.  | 
+| Drink | Component card displaying drink, price, rating. |
+| HomeScreen | Home Screen. Will hold the landing page. |
+| ProductScreen | Shows current inventory of alcohol. |
 | Footer | Contains footer text with creator.|
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Initializing framework/app | H | 1 hr |0mins | mins |
-| Netlify Deploy | H | 1 hr |0mins | mins |
-| Heroku Deploy | H | 1 hr |0mins | mins |
+| Initializing framework/app | H | 1 hr | 1 hr | 1 hr |
+| Netlify Deploy | H | 1 hr | 1hr | 1hr |
+| Heroku Deploy | H | 1 hr | 0mins |  |
 | Build API | H | 3 hrs | mins | mins |
-| Rails Routes | H | 3 hrs| mins | mins |
-| Building Components | H | 8hrs| hrs | hrs |
-| React routes | H | 6hrs| hrs | rs |
+| Express Routes | H | 3 hrs| mins | mins |
+| Building Components | H | 8hrs| 4hrs | hrs |
+| React routes | H | 6hrs| 2hrs | rs |
 | Rendering data pull from API | H | 2hrs| hrs | hrs |
-| CSS Styling | M | 25hrs| hrs | hrs |
+| CSS Styling | M | 25hrs| 1hrs | hrs |
 | Double-checking State and Routes | H | 2hrs| hrs | hrs |
 | Total | H | 51hrs| hrs | hrs |
 
