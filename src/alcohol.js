@@ -1,4 +1,4 @@
-const alcohol = [
+const drinks = [
     {
     _id: '1',
     name: 'Grey Goose Vodka',
@@ -33,3 +33,5 @@ const alcohol = [
     numReviews: 7,
 },
 ]
+
+export default drinks;
