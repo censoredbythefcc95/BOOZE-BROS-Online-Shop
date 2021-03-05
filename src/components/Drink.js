@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap"
 // Object destructing for props being passed. Checkpoint for tonight.
 const Drink = ({ drink }) => {
     return (
-        <Card>
+        <Card className='my-4 p-4 rounded'>
             <a href={`/drink/${drink._id}`}>
                 <Card.Img src={drink.image} />
             </a>
@@ -16,13 +16,13 @@ const Drink = ({ drink }) => {
                  </a>
 
             <Card.Text as='div'>
-                <div>
+                <div className='my-4'>
                     {drink.rating} from {drink.numReviews} reviews
                 </div>
             </Card.Text>
-                <h4>${drink.price}</h4>
-            <Card.Text>
-
+                
+            <Card.Text as='h4'>
+                 <h4>${drink.price}</h4>
             </Card.Text>
             </Card.Body>
         </Card>
