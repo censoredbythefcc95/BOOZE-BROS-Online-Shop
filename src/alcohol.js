@@ -6,7 +6,7 @@ const drinks = [
     brand: 'Grey Goose',
     category: 'Liquor',
     price: 79.99,
-    countInStock: 3,
+    countInStock: 0,
     rating: 5,
     numReviews: 3,
     image: '/images/greygoose.jpg',
