@@ -2,10 +2,10 @@
 
 ## Project Links
 
-- [GitHub Link](https://github.com/censoredbythefcc95/Capstone-Project.git)
-- [Official Link Coming Soon]()
-- [React Architecture](https://docs.google.com/drawings/d/1MKaMB9ZBuqYwpL_zWeFTS4ldHVOw_13i1GcoktvEhJc/edit)
-- [Rails Architecture](https://docs.google.com/drawings/d/1uV9z12GmSFy5lU0cogFGxGZzBqruhpwzyBBcXqTEHRE/edit)
+- [Frontend GitHub Repo Link](https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop.git)
+- [Backend GitHub Repo Link](https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend.git)
+- [Live Project Link](https://boozebrosapp.netlify.app)
+
 
 ## Project Description
 
@@ -22,17 +22,23 @@ Customers will be able to:
 
 | Project Phase | Status/Notes | 
 | --- | :---: |  
-| Project Approval | Approved | 
-| Planning Architecture | Complete  | 
-| React server set-up/ CORS | Complete and deployed. | 
-| Express server set-up | Not started |
+| Project Approval | Complete | 
+| Planning Architecture | Complete | 
+| React server set-up/ CORS | Complete - Front-end deployed on Netlify. | 
+| Express server set-up | Complete |
 | Primary API creation | In Progress - Mock Schema in progress. |
-| Express route configuration | Not started |
-| Nesting Routes | Not started.  |
-| React front-end primary set-up| In Progress  |
-| Fetching API call into React components | Not started.  |
+| Express route configuration | In Progress |
+| Nesting Routes | Not started |
+| React front-end primary set-up | In Progress  |
+| Fetching API call into React components | Not started. |
 | Functionality testing | Not started. |
 | CSS Styling | Not started. |
+
+## Architecture 
+
+- [React Architecture](https://docs.google.com/drawings/d/1MKaMB9ZBuqYwpL_zWeFTS4ldHVOw_13i1GcoktvEhJc/edit)
+- [Rails Architecture](https://docs.google.com/drawings/d/1uV9z12GmSFy5lU0cogFGxGZzBqruhpwzyBBcXqTEHRE/edit)
+
 
 ## API
 
@@ -40,13 +46,18 @@ I will create my own API on Express for the alcohol inventory. I will implement 
 
 
 ```
-"Liquors": {
-        "name": Grey Goose Vodka",
-        "country": "United States of America",
-        "region": "New York",
-        "price": "45.67",
-        "stock_remaining": "24",
-        "alcohol_percentage": 40%,
+{
+    _id: '2',
+    name: 'Black Label',
+    description: 'The expensive stuff. Time to get lit',
+    brand: 'Johnnie Walker',
+    category: 'Liquor',
+    price: 149.99,
+    countInStock: 15,
+    rating: 5,
+    numReviews: 2,
+    image: '/images/blacklabel.jpg',
+},
 ```
 
 
@@ -58,7 +69,7 @@ Here are the official wireframes for my weather application. The first link is t
 - [Desktop / Tablet Wireframes]()
 
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP
 
 MVP - Capstone Requirements per the GA Project Worksheet  
 
@@ -94,14 +105,14 @@ Initial components decided for Project.
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Initializing framework/app | H | 1 hr | 1 hr | 1 hr |
-| Netlify Deploy | H | 1 hr | 1hr | 1hr |
+| Netlify Deploy | H | 1 hr | 1 hr | 1hr |
 | Heroku Deploy | H | 1 hr | 0mins |  |
 | Build API | H | 3 hrs | mins | mins |
-| Express Routes | H | 3 hrs| mins | mins |
-| Building Components | H | 8hrs| 4hrs | hrs |
-| React routes | H | 6hrs| 2hrs | rs |
-| Rendering data pull from API | H | 2hrs| hrs | hrs |
-| CSS Styling | M | 25hrs| 1hrs | hrs |
+| Express Routes | H | 3 hrs| 1 hr | mins |
+| Building Components | H | 8hrs| 6hrs | hrs |
+| React routes | H | 6hrs| 4hrs | rs |
+| Rendering data pull from API | H | 2 hrs| hrs | hrs |
+| CSS Styling | M | 25 hrs | 1hrs | hrs |
 | Double-checking State and Routes | H | 2hrs| hrs | hrs |
 | Total | H | 51hrs| hrs | hrs |
 
@@ -121,3 +132,9 @@ I still need to determine my final component architecture. It is still unclear. 
 - Figure out architecture
 - Make sure documentation is really in place before starting(still unclear)
 - Research GH and other sites for design. 
+
+## Roadblocks / Questions
+
+- Is it still a good avenue to go down User Authentication?
+- Am I overcomplicating my code?
+- Am I following good practice with React Component builds?
