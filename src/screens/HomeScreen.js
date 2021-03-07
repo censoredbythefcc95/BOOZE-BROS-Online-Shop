@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import drinks from '../alcohol'
 import { Row, Col } from 'react-bootstrap'
+import axios from 'axios';
 import Drink from "../components/Drink"
  
 
@@ -10,8 +11,14 @@ const HomeScreen = () => {
     const [drinks, setDrinks] = useState([])
     useEffect(() => {
         console.log('Testing useEffect')
-    });
-    
+        const fetchDrinks = async () => {
+            const { data } = await axios.get('/drinks')
+            setDrinks(data)
+        }
+
+        fetchDrinks();
+    }, [] );
+
     return (
         <>
             <h1>Latest Products in Stock</h1>
