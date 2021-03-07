@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Rating from "../components/Rating"
-import drinks from "../alcohol"
+// import drinks from "../alcohol"
 import { Link } from "react-router-dom"
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap"
+import axios from 'axios'
 
 const ProductScreen = ({ match }) => {
 
-    const drink = drinks.find(p => p._id === match.params.id)
-    console.log(drink)
+    const [drink, setDrink] = useState( {} )
+
+    useEffect(() => {
+        const fetchDrink = async () => {
+            const { data } = await axios.get(`/drinks/${match.params.id}`)
+            setDrink(data)
+        }
+
+        fetchDrink();
+    }); // dependency array results in useEffect warning. Probably not a big deal for now.
+
     return (
         <div>
             <Link className="btn btn-dark my-4" to='/'>
