@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import drinks from '../alcohol'
+// import drinks from '../alcohol' // pulling data from proxy, alcohol.js no longer needed at this time. 
 import { Row, Col } from 'react-bootstrap'
 import axios from 'axios';
 import Drink from "../components/Drink"
