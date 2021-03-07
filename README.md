@@ -108,13 +108,13 @@ Initial components decided for Project.
 | Netlify Deploy | H | 1 hr | 1 hr | 1hr |
 | Heroku Deploy | H | 1 hr | 0mins |  |
 | Build API | H | 3 hrs | mins | mins |
-| Express Routes | H | 3 hrs| 1 hr | mins |
-| Building Components | H | 8hrs| 6hrs | hrs |
+| Express Routes | H | 3 hrs| 2 hr | mins |
+| Building Components | H | 8hrs| 7hrs | hrs |
 | React routes | H | 6hrs| 4hrs | rs |
 | Rendering data pull from API | H | 2 hrs| hrs | hrs |
 | CSS Styling | M | 25 hrs | 1hrs | hrs |
 | Double-checking State and Routes | H | 2hrs| hrs | hrs |
-| Total | H | 51hrs| hrs | hrs |
+| Total | H | 51hrs| 16hrs | hrs |
 
 
 ## Additional Technologies
@@ -138,3 +138,4 @@ I still need to determine my final component architecture. It is still unclear. 
 - Is it still a good avenue to go down User Authentication?
 - Am I overcomplicating my code?
 - Am I following good practice with React Component builds?
+- useEffect hook when assigning state? 
