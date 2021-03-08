@@ -26,11 +26,11 @@ Customers will be able to:
 | Planning Architecture | Complete | 
 | React server set-up/ CORS | Complete - Front-end deployed on Netlify. | 
 | Express server set-up | Complete |
-| Primary API creation | In Progress - Mock Schema in progress. |
+| Primary API creation | In Progress |
 | Express route configuration | In Progress |
 | Nesting Routes | Not started |
 | React front-end primary set-up | In Progress  |
-| Fetching API call into React components | Not started. |
+| Fetching API call into React components | In Progress |
 | Functionality testing | Not started. |
 | CSS Styling | Not started. |
 
@@ -102,19 +102,19 @@ Initial components decided for Project.
 | ProductScreen | Shows current inventory of alcohol. |
 | Footer | Contains footer text with creator.|
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Initializing framework/app | H | 1 hr | 1 hr | 1 hr |
-| Netlify Deploy | H | 1 hr | 1 hr | 1hr |
-| Heroku Deploy | H | 1 hr | 0mins |  |
-| Build API | H | 3 hrs | mins | mins |
-| Express Routes | H | 3 hrs| 2 hr | mins |
-| Building Components | H | 8hrs| 7hrs | hrs |
-| React routes | H | 6hrs| 4hrs | rs |
-| Rendering data pull from API | H | 2 hrs| hrs | hrs |
-| CSS Styling | M | 25 hrs | 1hrs | hrs |
-| Double-checking State and Routes | H | 2hrs| hrs | hrs |
-| Total | H | 51hrs| 16hrs | hrs |
+| Component | Priority | Estimated Time | Time Invested |
+| --- | :---: |  :---: | :---: | 
+| Initializing framework/app | H | 1 hr | 1 hr | 
+| Netlify Deploy | H | 1 hr | 1 hr |
+| Heroku Deploy | H | 1 hr |  0 hrs | 
+| Build API | H | 3 hrs | 2 hrs | 
+| Express Routes | H | 3 hrs| 3 hr | 
+| Building Components | H | 8hrs| 7hrs | 
+| React routes | H | 6hrs | 4hrs | 
+| Rendering data pull from API | H | 2 hrs | hrs |
+| CSS Styling | M | 25 hrs | 1hrs | 
+| Double-checking State and Routes | H | 2 hrs | hrs |
+| Total | H | 51hrs | 19hrs |
 
 
 ## Additional Technologies
