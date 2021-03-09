@@ -24,14 +24,14 @@ Customers will be able to:
 | --- | :---: |  
 | Project Approval | Complete | 
 | Planning Architecture | Complete | 
-| React server set-up/ CORS | Complete - Front-end deployed on Netlify. | 
+| React server set-up/ CORS | Complete | 
 | Express server set-up | Complete |
-| Primary API creation | In Progress |
+| Primary API creation | Complete |
 | Express route configuration | In Progress |
-| Nesting Routes | Not started |
+| Nesting Routes | In Progress |
 | React front-end primary set-up | In Progress  |
 | Fetching API call into React components | In Progress |
-| Functionality testing | Not started. |
+| Functionality testing | In Progress |
 | CSS Styling | Not started. |
 
 ## Architecture 
@@ -107,14 +107,14 @@ Initial components decided for Project.
 | Initializing framework/app | H | 1 hr | 1 hr | 
 | Netlify Deploy | H | 1 hr | 1 hr |
 | Heroku Deploy | H | 1 hr |  0 hrs | 
-| Build API | H | 3 hrs | 2 hrs | 
-| Express Routes | H | 3 hrs| 3 hr | 
-| Building Components | H | 8hrs| 7hrs | 
+| Build API | H | 3 hrs | 4 hrs | 
+| Express Routes | H | 3 hrs| 4 hrs | 
+| Building Components | H | 8hrs| 8hrs | 
 | React routes | H | 6hrs | 4hrs | 
-| Rendering data pull from API | H | 2 hrs | hrs |
+| Rendering data pull from API | H | 2 hrs | 2 hrs |
 | CSS Styling | M | 25 hrs | 1hrs | 
 | Double-checking State and Routes | H | 2 hrs | hrs |
-| Total | H | 51hrs | 19hrs |
+| Total | H | 51hrs | 25hrs |
 
 
 ## Additional Technologies
