@@ -4,11 +4,13 @@ import './index.css';
 import './bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import drinkStore from './store';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider drinkStore={drinkStore}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
