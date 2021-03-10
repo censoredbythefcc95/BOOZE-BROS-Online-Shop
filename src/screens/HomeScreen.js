@@ -1,22 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 // import drinks from '../alcohol' // pulling data from proxy, alcohol.js no longer needed at this time. 
 import { Row, Col } from 'react-bootstrap'
-import axios from 'axios';
 import Drink from "../components/Drink"
+import { useDispatch, useSelector } from "react-redux";
  
 
 
 const HomeScreen = () => {
     // Setting State for my drinks.
-    const [drinks, setDrinks] = useState([])
-    useEffect(() => {
-        console.log('Testing useEffect')
-        const fetchDrinks = async () => {
-            const { data } = await axios.get('/drinks')
-            setDrinks(data)
-        }
 
-        fetchDrinks();
+    useEffect(() => {
+   
     }, [] );
 
     return (
