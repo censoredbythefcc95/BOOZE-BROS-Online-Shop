@@ -1,23 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Rating from "../components/Rating"
 // import drinks from "../alcohol"
 import { Link } from "react-router-dom"
+import { useDispatch , useSelector } from "react-redux";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap"
-import axios from 'axios'
+import { listDrinkDetails, listDrinks } from "../actions/drinkActions";
 
 const ProductScreen = ({ match }) => {
-
-    const [drink, setDrink] = useState( {} )
-
+    const dispatch = useDispatch();
     useEffect(() => {
-        const fetchDrink = async () => {
-            const { data } = await axios.get(`/drinks/${match.params.id}`)
-            setDrink(data)
-        }
+      dispatch(listDrinkDetails(match.params.id))
+    }, [dispatch]); // dependency array results in useEffect warning. Probably not a big deal for now.
 
-        fetchDrink();
-    }); // dependency array results in useEffect warning. Probably not a big deal for now.
-
+        
     return (
         <div>
             <Link className="btn btn-dark my-4" to='/'>
