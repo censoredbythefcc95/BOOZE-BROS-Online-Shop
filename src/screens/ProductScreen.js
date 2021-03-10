@@ -6,7 +6,7 @@ import { useDispatch , useSelector } from "react-redux";
 import { Row, Col, Image, ListGroup, Card, Button, Form } from "react-bootstrap"
 import { listDrinkDetails, } from "../actions/drinkActions";
 
-const ProductScreen = ({ match }) => {
+const ProductScreen = ({ history, match }) => {
 
     const [quantity, setQuantity] = useState(0);
     const dispatch = useDispatch();
@@ -16,7 +16,9 @@ const ProductScreen = ({ match }) => {
       dispatch(listDrinkDetails(match.params.id))
     }, [dispatch, match]); // dependency array results in useEffect warning. Probably not a big deal for now.
 
-        
+        const cartHandler = () => {
+            history.push(`/cart/${match.params.id}?quantity=${quantity}`)
+        }
     return (
         <div>
             <Link className="btn btn-dark my-4" to='/'>
@@ -90,7 +92,8 @@ const ProductScreen = ({ match }) => {
                                 <ListGroup.Item>
                                     <Button className="btn-block"
                                             type='button'
-                                            disabled={drink.countInStock === 0}>
+                                            disabled={drink.countInStock === 0}
+                                            onClick={cartHandler}>
                                             ADD TO CART
                                     </Button>
                                 </ListGroup.Item>
