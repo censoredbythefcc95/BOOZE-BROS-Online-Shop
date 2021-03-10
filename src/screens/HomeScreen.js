@@ -10,6 +10,8 @@ import { useDispatch, useSelector } from "react-redux";
 const HomeScreen = () => {
     // Setting State for my drinks.
     const dispatch = useDispatch()
+    const drinkList =useSelector(state => state.drinkList)
+    const { loading, error, drinks } = drinkList
     // useEffect hook passed in, dispatch pushing listDrinks.
     useEffect(() => {
         dispatch(listDrinks())
@@ -18,14 +20,15 @@ const HomeScreen = () => {
 
     return (
         <>
-            <h1>Latest Products in Stock</h1>
-            <Row> 
+            <h1>Latest Booze in Stock</h1>
+            {loading ? <p>Loading drinks</p> : error ? <p>{error}</p> : <Row> 
                 {drinks.map(drink => (
                     <Col sm={12} md={6} lg={3} xl={3}>
                         <Drink drink={drink} />
                     </Col>
                 ))}
-            </Row>
+            </Row>}
+            
 
         </>
     )
