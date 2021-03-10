@@ -8,7 +8,7 @@ import { listDrinkDetails, } from "../actions/drinkActions";
 
 const ProductScreen = ({ history, match }) => {
 
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
     const drinkDetails = useSelector(state => state.drinkDetails)
     const { loading, error, drink } = drinkDetails
