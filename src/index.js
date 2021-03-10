@@ -5,10 +5,10 @@ import './bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import drinkStore from './store';
+import drinkStore from './store.js';
 
 ReactDOM.render(
-  <Provider drinkStore={drinkStore}>
+  <Provider store={drinkStore}>
     <App />
   </Provider>,
   document.getElementById('root')
