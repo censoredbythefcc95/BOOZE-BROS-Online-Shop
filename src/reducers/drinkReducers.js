@@ -1,3 +1,7 @@
+//actions from constants folder.
+import { LIST_REQUEST, LIST_SUCCESS, LIST_FAIL } from "../constants/drinkAction";
+
+
 export const drinkReducer = (state = { drinks: [] }, action) => {
     //switch statement for cases of list requests
     switch (action.type) {
