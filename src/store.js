@@ -6,7 +6,10 @@ import thunk from 'redux-thunk';
 
 const reducer = combineReducers( { drinkList: drinkReducer, drinkDetails: drinkDetailsReducer,
         cart: cartReducer } )
-const firstState = {}
+
+const cartItemsStorage = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems'))
+: []
+const firstState = { cart: { cartItems: cartItemsStorage }, }
 const middleware = [thunk]
 
 const drinkStore = createStore(reducer, firstState, composeWithDevTools(applyMiddleware(...middleware)))
