@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Rating from "../components/Rating"
 // import drinks from "../alcohol"
 import { Link } from "react-router-dom"
 import { useDispatch , useSelector } from "react-redux";
-import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap"
-import { listDrinkDetails, listDrinks } from "../actions/drinkActions";
+import { Row, Col, Image, ListGroup, Card, Button, Form } from "react-bootstrap"
+import { listDrinkDetails, } from "../actions/drinkActions";
 
 const ProductScreen = ({ match }) => {
+
+    const [quantity, setQuantity] = useState(0);
     const dispatch = useDispatch();
     const drinkDetails = useSelector(state => state.drinkDetails)
     const { loading, error, drink } = drinkDetails
@@ -66,6 +68,25 @@ const ProductScreen = ({ match }) => {
                                     </Col>
                                 </Row>
                                 </ListGroup.Item>
+
+                                    {drink.countInStock > 0 && (
+                                        <ListGroup.Item>
+                                            <Row>
+                                                <Col> Quantity </Col>
+                                                <Col>
+                                                    <Form.Control 
+                                                     as="select"
+                                                     value={quantity}
+                                                     onChange={(e) => setQuantity(e.target.value)}>
+                                                    {[...Array(drink.countInStock).keys()].map(x => (
+                                                        <option key={x + 1} value={x +1}>{x + 1} </option>
+                                                    ))}
+                                                    </Form.Control>
+                                                </Col>
+                                            </Row>
+                                        </ListGroup.Item>
+                                    )}
+
                                 <ListGroup.Item>
                                     <Button className="btn-block"
                                             type='button'
