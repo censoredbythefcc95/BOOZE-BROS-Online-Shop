@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Row, Col, ListGroup, Image, Form, Button, Card } from "react-bootstrap";
-import { addToCart } from "../actions/cartActions";
+import { addToCart, removeFromCart } from "../actions/cartActions";
 import Message from "../components/Message" ;
 import LoadingSpinner from "../components/Loading";
 
@@ -22,8 +22,9 @@ const ShoppingCartScreen = ({ match, location, history }) => {
     }, [dispatch, drinkId, quantity])
 
     const removeFromCartHandler = (id) => {
-        console.log('remove from cart')
+        dispatch(removeFromCart(id))
     }
+    
     // To be used for checkout page.
     const checkoutHandler = () => {
         console.log("Checkout page")
