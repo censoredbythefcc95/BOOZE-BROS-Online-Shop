@@ -24,6 +24,11 @@ const ShoppingCartScreen = ({ match, location, history }) => {
     const removeFromCartHandler = (id) => {
         console.log('remove from cart')
     }
+    // To be used for checkout page.
+    const checkoutHandler = () => {
+        console.log("Checkout page")
+        history.push("/login?redirect=pickup")
+    }
   
     return (
         <>
@@ -45,7 +50,7 @@ const ShoppingCartScreen = ({ match, location, history }) => {
                                 <Col md={2}>
                                 <Form.Control 
                                                      as="select"
-                                                     value={quantity}
+                                                     value={item.quantity}
                                                      onChange={(e) => dispatch(addToCart(item.drink, Number(e.target.value)))}>
                                                     {[...Array(item.countInStock).keys()].map(x => (
                                                         <option key={x + 1} value={x +1}>{x + 1} </option>
@@ -65,10 +70,22 @@ const ShoppingCartScreen = ({ match, location, history }) => {
                     )}
                 </Col>
                 <Col md={2}>
-
-                </Col>
-                <Col md={2}>
-
+                    <Card>
+                        <ListGroup variant="flush">
+                            <ListGroup.Item>
+                                <h4>Subtotal ({cartItems.reduce((acc, item) => acc + item.quantity, 0)}) items</h4>
+                                ${cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0).toFixed(2)}
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                                <Button type="button"
+                                        className="btn-block"
+                                        disabled={cartItems.length === 0}
+                                        onClick={checkoutHandler}>
+                                            Go to Checkout
+                                        </Button>
+                            </ListGroup.Item>
+                        </ListGroup>
+                    </Card>
                 </Col>
             </Row>
         </>
