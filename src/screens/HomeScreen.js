@@ -4,7 +4,8 @@ import { Row, Col } from 'react-bootstrap'
 import Drink from "../components/Drink"
 import { listDrinks } from "../actions/drinkActions";
 import { useDispatch, useSelector } from "react-redux";
- 
+import Message from "../components/Message" ;
+import LoadingSpinner from "../components/Loading";
 
 
 const HomeScreen = () => {
@@ -21,7 +22,7 @@ const HomeScreen = () => {
     return (
         <>
             <h1>Latest Booze in Stock</h1>
-            {loading ? <p>Loading drinks</p> : error ? <p>{error}</p> : <Row> 
+            {loading ? (<LoadingSpinner />) : error ? (<Message variant='danger'>{error}</Message>) : <Row> 
                 {drinks.map(drink => (
                     <Col sm={12} md={6} lg={3} xl={3}>
                         <Drink drink={drink} />
